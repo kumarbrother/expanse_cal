@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="expense.css">
+</head>
+<body>
+    <header>
+        <h1>Expense Tracker</h1>
+    </header>
+    <main>
+        <!-- Add Expense Section -->
+        <section id="add-expense">
+            <form id="expense-form">
+                <input type="text" id="expense-name" placeholder="Expense Name" required>
+                <input type="number" id="expense-amount" placeholder="Amount" required>
+                <select id="expense-category">
+                    <option value="food">Food</option>
+                    <option value="transport">Transport</option>
+                    <option value="shopping">Shopping</option>
+                    <option value="entertainment">Entertainment</option>
+                    <option value="health">Health</option>
+                    <option value="education">Education</option>
+                </select>
+                <button type="submit">Add Expense</button>
+            </form>
+        </section>
+
+        <!-- Add Category Section -->
+        <section id="add-category">
+            <h3>Add New Expense Category</h3>
+            <form id="category-form">
+                <input type="text" id="new-category" placeholder="New Category Name" required>
+                <button type="submit">Add Category</button>
+            </form>
+        </section>
+
+        <!-- Expense List Section -->
+        <section id="expense-list">
+            <h2>Your Expenses</h2>
+            <ul id="expense-items">
+                <li>
+                    <strong>Movie Tickets</strong>: 20 RS (Entertainment)
+                    <button class="edit-btn">Edit</button>
+                    <button class="delete-btn">Delete</button>
+                </li>
+                <li>
+                    <strong>Gym Membership</strong>: 50 RS (Health)
+                    <button class="edit-btn">Edit</button>
+                    <button class="delete-btn">Delete</button>
+                </li>
+                <li>
+                    <strong>Online Course</strong>: 100 RS (Education)
+                    <button class="edit-btn">Edit</button>
+                    <button class="delete-btn">Delete</button>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Expense Tracker</p>
+    </footer>
+    <script src="expense.js"></script>
+</body>
+</html>
